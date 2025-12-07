@@ -1,0 +1,101 @@
+/* ---------- GLOBAL STYLES ---------- */
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Clean readable font */
+  background-color: aliceblue; /* Light pleasant background */
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center everything horizontally */
+}
+
+/* ---------- WEATHER FORM ---------- */
+.weatherForm {
+  margin: 20px; /* Add spacing around form */
+}
+
+/* Input box styling */
+.cityInput {
+  padding: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 30px; /* Rounded input edges */
+  margin: 10px;
+  width: 300px; /* Fixed width for neat layout */
+}
+
+/* Submit button styling */
+button[type="submit"] {
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 2rem;
+  background-color: aqua;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Makes it clickable */
+}
+
+/* Hover effect for better interactivity */
+button[type="submit"]:hover {
+  background-color: rgb(9, 113, 113);
+}
+
+/* ---------- WEATHER CARD ---------- */
+.card {
+  background: linear-gradient(180deg, rgb(59, 141, 229), orange); /* Beautiful gradient background */
+  padding: 50px;
+  box-shadow: 2px 2px 5px black; /* Slight 3D effect */
+  border-radius: 20px; /* Smooth rounded corners */
+  min-height: 300px;
+  display: flex;
+  flex-direction: column; /* Stack text and emoji vertically */
+  align-items: center; /* Center contents */
+}
+
+/* ---------- TEXT STYLES ---------- */
+h1 {
+  font-size: 3.5rem;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+p {
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+
+/* City name and temperature — bold and large */
+.cityDisplay,
+.tempDisplay {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 25px;
+}
+
+/* Humidity line */
+.humidityDisplay {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Weather description (e.g., "clear sky") */
+.descDisplay {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+/* Weather emoji (☀️, 🌧️ etc.) */
+.weatherEmoji {
+  margin: 0;
+  font-size: 7.5rem; /* Big and expressive */
+}
+
+/* Error message styling */
+.errorDisplay {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+}
